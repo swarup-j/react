@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./icons/Header/Group.svg" alt="logo" />
+      </div>
+      <div class="search">
+        <input placeholder="Search wines, customers here" />
+      </div>
+      <div class="bell">
+        <img src="./icons//Header/Icons/Bell.svg" alt="notifications" />
+      </div>
+      <div class="profile">
+        <p>Nicolas D.</p>
+        <div class="profile-photo">
+          <img
+            src="./icons/Header/Icons/670e3a0317e55278f44a0eb5b132d62acb76af7e.png"
+            alt="profile"
+          />
+        </div>
+        <div class="dropdown">
+          <img src="icons/Header/Header/Icons/Dropdown.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <div class="sidebar-card sidebar-card-active">
+            <img src="./icons/Icons/Dashboard Inactive.svg" alt="" />
+            <p>Dashboard</p>
+          </div>
+          <div class="sidebar-card">
+            <img src="./icons/Icons/Catalog Active.svg" alt="" />
+            <p>Inventory</p>
+          </div>
+
+          <div class="sidebar-card">
+            <img src="./icons/Icons/Orders Inactive.svg" alt="" />
+            <p>Orders</p>
+          </div>
+          <div class="sidebar-card">
+            <img src="./icons/Icons/Customers Inactive.svg" alt="" />
+            <p>Customers</p>
+          </div>
+          <div class="sidebar-card">
+            <img src="./icons/Icons/Reports Inactive.svg" alt="" />
+            <p>Reports</p>
+          </div>
+          <div class="sidebar-card">
+            <img src="./icons/Icons/Settings.svg" alt="" />
+            <p>Settings</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="overview">
+          <p>Overview</p>
+          <button class="add-button">
+            <img src="./icons/Button/Icons/Add Button.svg" alt="plus" />
+            <p>ADD NEW WINE</p>
+          </button>
+        </div>
+        <div class="matrics">
+          <div class="matrics-card open">
+            <div class="icon">
+              <p>Open orders</p>
+              <img src="./icons/Cards/Icons/Unfulfield Order.svg" alt="" />
+            </div>
+            <p>239</p>
+          </div>
+          <div class="matrics-card transit">
+            <div class="icon">
+              <p>Orders in transit</p>
+              <img src="./icons/Cards/Icons/Order in transit.svg" alt="" />
+            </div>
+            <p>126</p>
+          </div>
+          <div class="matrics-card fullfilled">
+            <div class="icon">
+              <p>Fullfiled orders</p>
+              <img src="./icons/Cards/Icons/Fullfield Order.svg" alt="" />
+            </div>
+            <p>1,254</p>
+          </div>
+          <div class="matrics-card cancelled">
+            <div class="icon">
+              <p>Cancelled orders</p>
+              <img src="./icons/Cards/Icons/Cancelled Order.svg" alt="" />
+            </div>
+            <p>35</p>
+          </div>
+        </div>
+
+        <p class="sales-details">Sales Details</p>
+      </div>
+    </main>
+  </body>
+</html>
