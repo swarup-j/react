@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-    </style>
+    <link rel="stylesheet" href="./sales.css" />
+    <link rel="stylesheet" href="./inventory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -22,15 +27,18 @@
       </div>
       <div class="profile">
         <p>Nicolas D.</p>
-        <div class="profile-photo">
-          <img
-            src="./icons/Header/Icons/670e3a0317e55278f44a0eb5b132d62acb76af7e.png"
-            alt="profile"
-          />
-        </div>
-        <div class="dropdown">
-          <img src="icons/Header/Header/Icons/Dropdown.svg" alt="" />
-        </div>
+
+        <img
+          src="./icons/Header/Icons/670e3a0317e55278f44a0eb5b132d62acb76af7e.png"
+          alt="profile"
+          class="profile-photo"
+        />
+
+        <img
+          src="icons/Header/Header/Icons/Dropdown.svg"
+          alt=""
+          class="profile-dropdown"
+        />
       </div>
     </div>
     <main>
@@ -104,7 +112,654 @@
         </div>
 
         <p class="sales-details">Sales Details</p>
+        <div class="sales">
+          <div class="sales-page">
+            <div class="total-sales">
+              <h1>Total Sales Overview</h1>
+              <p>7 - 13 Aug 2020</p>
+            </div>
+            <a href="#" class="refresh">
+              <img src="./icons/Icons/refresh.svg" alt="" />
+              <p>Refresh Matrics</p>
+            </a>
+            <a href="#" class="filter">
+              <p>Filter by |</p>
+              <h1>This Week</h1>
+              <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+            </a>
+          </div>
+          <div class="hr"></div>
+          <div class="graph-section">
+            <div class="graph">
+              <div class="price">
+                <div class="money">
+                  <h1>$71,279.00</h1>
+                  <div class="last-week">
+                    <img src="./icons/Icons/growthup.svg" alt="" />
+                    <p>+21% from last week</p>
+                  </div>
+                </div>
+                <div class="highest-revenue">
+                  <img src="./icons/Icons/Growth.svg" alt="" />
+                  <p>highest revenue since 2 weeks ago</p>
+                </div>
+              </div>
+              <div class="chart"></div>
+            </div>
+
+            <div class="stats">
+              <p>Total Profit</p>
+              <h1>$12,545,.00</h1>
+              <div class="last-week">
+                <img src="./icons/Icons/growthup.svg" alt="" />
+                <p>+21% from last week</p>
+              </div>
+              <p>Total Products Sold</p>
+
+              <h2>329</h2>
+            </div>
+          </div>
+        </div>
+        <div class="inventory-title">
+          <h1>Inventory</h1>
+        </div>
+        <div class="inventory">
+          <div class="table-head">
+            <label class="container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <p class="table-text">PRODUCT</p>
+            <div class="rating table-title">
+              <p class="table-text">RATING</p>
+              <img src="./icons/Icons/sort.svg" alt="" />
+            </div>
+            <div class="vintage table-title">
+              <p class="table-text">VINTAGE</p>
+              <img src="./icons/Icons/sort.svg" alt="" />
+            </div>
+
+            <div class="qty table-title">
+              <p class="table-text">QTY</p>
+              <img src="./icons/Icons/sort.svg" alt="" />
+            </div>
+            <div class="table-title volume">
+              <p class="table-text">VOLUME</p>
+              <img src="./icons/Icons/sort.svg" alt="" />
+            </div>
+            <div class="table-title cost">
+              <p class="table-text">COST</p>
+              <img src="./icons/Icons/sort.svg" alt="" />
+            </div>
+            <div class="table-title price">
+              <p class="table-text">PRICE</p>
+              <img src="./icons/Icons/sort.svg" alt="" />
+            </div>
+            <div class="dropdown"></div>
+          </div>
+          <div class="wine-list">
+            <div class="product">
+              <div class="accordian">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div class="wine-product pr">
+                  <img src="./imges/Rectangle 62-1.png" alt="" />
+                  <div class="description">
+                    <h1>Staglin Family Vineyard Cabernet Sauvignon</h1>
+                    <p>United States • California • Napa Valley</p>
+                  </div>
+                </div>
+                <div class="wine-rating rating">
+                  <p>RP 95</p>
+                  <p>+ 3</p>
+                </div>
+                <div class="wine-vitange vintage">
+                  <p>1950</p>
+                </div>
+                <div class="wine-qty qty">4</div>
+                <div class="wine-volume volume">Odd Ball (5000 mL)</div>
+                <div class="wine-cost cost">$56.95</div>
+
+                <div class="wine-price price">$59.95</div>
+                <button class="dropdown">
+                  <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="panel">
+                <div class="panel-head">
+                  <div></div>
+
+                  <div class="panel-desc">
+                    <h1>Staglin Family Vineyard Cabernet Sauvignon</h1>
+                    <div class="region-vintage">
+                      <div class="region">
+                        <h1>Region:</h1>
+                        <p>United States • California • Napa Valley</p>
+                      </div>
+                      <div class="desc-vintage">
+                        <h1>Vintage :</h1>
+                        <p>1950</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">View wine</a>
+                  <img src="./icons/Icons/Edit.svg" alt="" />
+                  <img src="./icons/Icons/Delete.svg" alt="" />
+                </div>
+                <div class="hr"></div>
+                <div class="panel-stats">
+                  <div></div>
+                  <div class="panel-rating">
+                    <h1>Rating</h1>
+                    <div class="panel-rating-div">
+                      <div class>
+                        <h1>James Suckiling's</h1>
+                        <p>JS 95</p>
+                      </div>
+                      <div>
+                        <h1>Robert Parker</h1>
+                        <p>RP 80</p>
+                      </div>
+                      <div>
+                        <h1>Antonio Galloni's</h1>
+                        <p>---</p>
+                      </div>
+                      <div>
+                        <h1>Wine Spectator</h1>
+                        <p>---</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-stock">
+                    <h1>Stock</h1>
+                    <div class="panel-stock-div">
+                      <div>
+                        <h1>Possimus</h1>
+                        <p>43 Units</p>
+                      </div>
+                      <div>
+                        <h1>Downtown Condo</h1>
+                        <p>95 Units</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="accordian">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div class="wine-product pr">
+                  <img src="./imges/Rectangle 62-2.png" alt="" />
+                  <div class="description">
+                    <h1>Chateau Latour</h1>
+                    <p>France • Bordeaux • Pauillac</p>
+                  </div>
+                </div>
+                <div class="wine-rating rating">
+                  <p>RP 95</p>
+                  <p>+ 3</p>
+                </div>
+                <div class="wine-vitange vintage">
+                  <p>2001</p>
+                </div>
+                <div class="wine-qty qty">4</div>
+                <div class="wine-volume volume">Magnum (2500 mL)</div>
+                <div class="wine-cost cost">$46.95</div>
+
+                <div class="wine-price price">$49.95</div>
+                <button class="dropdown">
+                  <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+                </button>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <div></div>
+
+                  <div class="panel-desc">
+                    <h1>Staglin Family Vineyard Cabernet Sauvignon</h1>
+                    <div class="region-vintage">
+                      <div class="region">
+                        <h1>Region:</h1>
+                        <p>United States • California • Napa Valley</p>
+                      </div>
+                      <div class="desc-vintage">
+                        <h1>Vintage :</h1>
+                        <p>1950</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">View wine</a>
+                  <img src="./icons/Icons/Edit.svg" alt="" />
+                  <img src="./icons/Icons/Delete.svg" alt="" />
+                </div>
+                <div class="hr"></div>
+                <div class="panel-stats">
+                  <div></div>
+                  <div class="panel-rating">
+                    <h1>Rating</h1>
+                    <div class="panel-rating-div">
+                      <div class>
+                        <h1>James Suckiling's</h1>
+                        <p>JS 95</p>
+                      </div>
+                      <div>
+                        <h1>Robert Parker</h1>
+                        <p>RP 80</p>
+                      </div>
+                      <div>
+                        <h1>Antonio Galloni's</h1>
+                        <p>---</p>
+                      </div>
+                      <div>
+                        <h1>Wine Spectator</h1>
+                        <p>---</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-stock">
+                    <h1>Stock</h1>
+                    <div class="panel-stock-div">
+                      <div>
+                        <h1>Possimus</h1>
+                        <p>43 Units</p>
+                      </div>
+                      <div>
+                        <h1>Downtown Condo</h1>
+                        <p>95 Units</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="accordian">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div class="wine-product pr">
+                  <img src="./imges/Rectangle 62-3.png" alt="" />
+                  <div class="description">
+                    <h1>Chateau Mouton Rothschild</h1>
+                    <p>France • Bordeaux • Pauillac</p>
+                  </div>
+                </div>
+                <div class="wine-rating rating">
+                  <p>RP 95</p>
+                  <p>+ 3</p>
+                </div>
+                <div class="wine-vitange vintage">
+                  <p>1985</p>
+                </div>
+                <div class="wine-qty qty">5</div>
+                <div class="wine-volume volume">Odd Ball (5000 mL)</div>
+                <div class="wine-cost cost">$96.95</div>
+
+                <div class="wine-price price">$99.95</div>
+                <button class="dropdown">
+                  <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+                </button>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <div></div>
+
+                  <div class="panel-desc">
+                    <h1>Chateau Mouton Rothschild</h1>
+                    <div class="region-vintage">
+                      <div class="region">
+                        <h1>Region:</h1>
+                        <p>France • Bordeaux • Pauillac</p>
+                      </div>
+                      <div class="desc-vintage">
+                        <h1>Vintage :</h1>
+                        <p>1985</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">View wine</a>
+                  <img src="./icons/Icons/Edit.svg" alt="" />
+                  <img src="./icons/Icons/Delete.svg" alt="" />
+                </div>
+                <div class="hr"></div>
+                <div class="panel-stats">
+                  <div></div>
+                  <div class="panel-rating">
+                    <h1>Rating</h1>
+                    <div class="panel-rating-div">
+                      <div class>
+                        <h1>James Suckiling's</h1>
+                        <p>JS 95</p>
+                      </div>
+                      <div>
+                        <h1>Robert Parker</h1>
+                        <p>RP 80</p>
+                      </div>
+                      <div>
+                        <h1>Antonio Galloni's</h1>
+                        <p>---</p>
+                      </div>
+                      <div>
+                        <h1>Wine Spectator</h1>
+                        <p>---</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-stock">
+                    <h1>Stock</h1>
+                    <div class="panel-stock-div">
+                      <div>
+                        <h1>Possimus</h1>
+                        <p>43 Units</p>
+                      </div>
+                      <div>
+                        <h1>Downtown Condo</h1>
+                        <p>95 Units</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="accordian">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div class="wine-product pr">
+                  <img src="./imges/Rectangle 62-1.png" alt="" />
+                  <div class="description">
+                    <h1>Staglin Family Vineyard Cabernet Sauvignon</h1>
+                    <p>United States • California • Napa Valley</p>
+                  </div>
+                </div>
+                <div class="wine-rating rating">
+                  <p>RP 95</p>
+                  <p>+ 3</p>
+                </div>
+                <div class="wine-vitange vintage">
+                  <p>1950</p>
+                </div>
+                <div class="wine-qty qty">4</div>
+                <div class="wine-volume volume">Odd Ball (5000 mL)</div>
+                <div class="wine-cost cost">$56.95</div>
+
+                <div class="wine-price price">$59.95</div>
+                <button class="dropdown">
+                  <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+                </button>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <div></div>
+
+                  <div class="panel-desc">
+                    <h1>Staglin Family Vineyard Cabernet Sauvignon</h1>
+                    <div class="region-vintage">
+                      <div class="region">
+                        <h1>Region:</h1>
+                        <p>United States • California • Napa Valley</p>
+                      </div>
+                      <div class="desc-vintage">
+                        <h1>Vintage :</h1>
+                        <p>1950</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">View wine</a>
+                  <img src="./icons/Icons/Edit.svg" alt="" />
+                  <img src="./icons/Icons/Delete.svg" alt="" />
+                </div>
+                <div class="hr"></div>
+                <div class="panel-stats">
+                  <div></div>
+                  <div class="panel-rating">
+                    <h1>Rating</h1>
+                    <div class="panel-rating-div">
+                      <div class>
+                        <h1>James Suckiling's</h1>
+                        <p>JS 95</p>
+                      </div>
+                      <div>
+                        <h1>Robert Parker</h1>
+                        <p>RP 80</p>
+                      </div>
+                      <div>
+                        <h1>Antonio Galloni's</h1>
+                        <p>---</p>
+                      </div>
+                      <div>
+                        <h1>Wine Spectator</h1>
+                        <p>---</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-stock">
+                    <h1>Stock</h1>
+                    <div class="panel-stock-div">
+                      <div>
+                        <h1>Possimus</h1>
+                        <p>43 Units</p>
+                      </div>
+                      <div>
+                        <h1>Downtown Condo</h1>
+                        <p>95 Units</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="accordian">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div class="wine-product pr">
+                  <img src="./imges/Rectangle 62-2.png" alt="" />
+                  <div class="description">
+                    <h1>Chateau Latour</h1>
+                    <p>France • Bordeaux • Pauillac</p>
+                  </div>
+                </div>
+                <div class="wine-rating rating">
+                  <p>RP 95</p>
+                  <p>+ 3</p>
+                </div>
+                <div class="wine-vitange vintage">
+                  <p>2001</p>
+                </div>
+                <div class="wine-qty qty">4</div>
+                <div class="wine-volume volume">Magnum (2500 mL)</div>
+                <div class="wine-cost cost">$46.95</div>
+
+                <div class="wine-price price">$49.95</div>
+                <button class="dropdown">
+                  <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+                </button>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <div></div>
+
+                  <div class="panel-desc">
+                    <h1>Staglin Family Vineyard Cabernet Sauvignon</h1>
+                    <div class="region-vintage">
+                      <div class="region">
+                        <h1>Region:</h1>
+                        <p>United States • California • Napa Valley</p>
+                      </div>
+                      <div class="desc-vintage">
+                        <h1>Vintage :</h1>
+                        <p>1950</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">View wine</a>
+                  <img src="./icons/Icons/Edit.svg" alt="" />
+                  <img src="./icons/Icons/Delete.svg" alt="" />
+                </div>
+                <div class="hr"></div>
+                <div class="panel-stats">
+                  <div></div>
+                  <div class="panel-rating">
+                    <h1>Rating</h1>
+                    <div class="panel-rating-div">
+                      <div class>
+                        <h1>James Suckiling's</h1>
+                        <p>JS 95</p>
+                      </div>
+                      <div>
+                        <h1>Robert Parker</h1>
+                        <p>RP 80</p>
+                      </div>
+                      <div>
+                        <h1>Antonio Galloni's</h1>
+                        <p>---</p>
+                      </div>
+                      <div>
+                        <h1>Wine Spectator</h1>
+                        <p>---</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-stock">
+                    <h1>Stock</h1>
+                    <div class="panel-stock-div">
+                      <div>
+                        <h1>Possimus</h1>
+                        <p>43 Units</p>
+                      </div>
+                      <div>
+                        <h1>Downtown Condo</h1>
+                        <p>95 Units</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="accordian">
+                <label class="container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div class="wine-product pr">
+                  <img src="./imges/Rectangle 62-3.png" alt="" />
+                  <div class="description">
+                    <h1>Chateau Mouton Rothschild</h1>
+                    <p>France • Bordeaux • Pauillac</p>
+                  </div>
+                </div>
+                <div class="wine-rating rating">
+                  <p>RP 95</p>
+                  <p>+ 3</p>
+                </div>
+                <div class="wine-vitange vintage">
+                  <p>1985</p>
+                </div>
+                <div class="wine-qty qty">5</div>
+                <div class="wine-volume volume">Odd Ball (5000 mL)</div>
+                <div class="wine-cost cost">$96.95</div>
+
+                <div class="wine-price price">$99.95</div>
+                <button class="dropdown">
+                  <img src="./icons/Icons/Dropdown-1.svg" alt="" />
+                </button>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <div></div>
+
+                  <div class="panel-desc">
+                    <h1>Chateau Mouton Rothschild</h1>
+                    <div class="region-vintage">
+                      <div class="region">
+                        <h1>Region:</h1>
+                        <p>France • Bordeaux • Pauillac</p>
+                      </div>
+                      <div class="desc-vintage">
+                        <h1>Vintage :</h1>
+                        <p>1985</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">View wine</a>
+                  <img src="./icons/Icons/Edit.svg" alt="" />
+                  <img src="./icons/Icons/Delete.svg" alt="" />
+                </div>
+                <div class="hr"></div>
+                <div class="panel-stats">
+                  <div></div>
+                  <div class="panel-rating">
+                    <h1>Rating</h1>
+                    <div class="panel-rating-div">
+                      <div class>
+                        <h1>James Suckiling's</h1>
+                        <p>JS 95</p>
+                      </div>
+                      <div>
+                        <h1>Robert Parker</h1>
+                        <p>RP 80</p>
+                      </div>
+                      <div>
+                        <h1>Antonio Galloni's</h1>
+                        <p>---</p>
+                      </div>
+                      <div>
+                        <h1>Wine Spectator</h1>
+                        <p>---</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-stock">
+                    <h1>Stock</h1>
+                    <div class="panel-stock-div">
+                      <div>
+                        <h1>Possimus</h1>
+                        <p>43 Units</p>
+                      </div>
+                      <div>
+                        <h1>Downtown Condo</h1>
+                        <p>95 Units</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <script>
+      //get all acoridian dropdown
+
+      const allDropdowns = document.querySelectorAll(".dropdown");
+
+      const allPanels = document.querySelectorAll(".panel");
+
+      allDropdowns.forEach((header) => {
+        header.addEventListener("click", () => {
+          //get the clicked panel
+          const accordian = header.parentElement;
+
+          const panel = accordian.nextElementSibling;
+          console.log(panel);
+          panel.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

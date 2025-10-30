@@ -9,6 +9,7 @@ body {
   height: 100%;
   color: #8c8ca1;
   font-family: "open-sans", sans-serif;
+
   overflow: hidden;
 }
 
@@ -78,18 +79,19 @@ body {
 .profile {
   height: 40px;
 
-  padding: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-radius: 20px;
   margin-left: 33.5px;
+  gap: 8px;
+  padding: 4px 8px;
 }
 .profile p {
   font-weight: 700;
   line-height: 24px;
   font-size: 16px;
   margin-bottom: 15px;
+  margin: 0;
 }
 .profile:hover {
   background-color: #8e2c49;
@@ -97,15 +99,10 @@ body {
 .profile-photo {
   height: 32px;
   width: 32px;
+  object-fit: cover;
   border: 1px solid white;
   border-radius: 32px;
   overflow: hidden;
-  margin: 9px;
-}
-.profile-photo img {
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 .dropdown {
@@ -256,7 +253,7 @@ main {
 }
 .matrics-card > p {
   font-size: 24px;
-  color: black;
+  color: #262730;
   font-weight: 700;
   line-height: 32px;
 }
@@ -276,6 +273,8 @@ main {
 .sales-details {
   margin-top: 24px;
   font-weight: 700;
-  color: black;
+  color: #262730;
   letter-spacing: 0px;
 }
+
+@import url("./sales.css");

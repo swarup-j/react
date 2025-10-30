@@ -1,0 +1,267 @@
+.inventory-title {
+  color: #262730;
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
+.table-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #485572;
+}
+
+.table-head,
+.accordian {
+  display: grid;
+  grid-template-columns: 0.25fr 4fr 1.5fr 1fr 1fr 2fr 1fr 1fr 0.5fr;
+  gap: 5px;
+
+  padding: 12px;
+
+  align-items: center;
+}
+.dropdown {
+  align-self: end;
+  justify-self: end;
+}
+.table-title {
+  display: flex;
+  justify-content: start;
+  gap: 4px;
+}
+.table-head input {
+  height: 0;
+  width: 0;
+}
+
+.table-title img {
+  height: 12px;
+  width: 12px;
+  object-fit: contain;
+}
+.wine-list {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.accordian:hover .wine-product h1 {
+  color: #ef4859;
+}
+
+.wine-product {
+  display: flex;
+
+  margin-right: 16px;
+  overflow: hidden;
+}
+.wine-volume {
+}
+.wine-product img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+}
+.description {
+  margin-left: 12px;
+}
+.wine-product h1 {
+  font-size: 16px;
+  color: #262730;
+  line-height: 24px;
+  margin: 8px 0px;
+}
+.wine-rating {
+  display: flex;
+  gap: 3.5px;
+}
+.wine-rating p {
+  background-color: #f4f7ff;
+  padding: 4px 7px;
+  color: #485572;
+  font-size: 14px;
+}
+.wine-rating,
+.wine-volume,
+.wine-qty,
+.wine-cost {
+  color: #8c8ca1;
+}
+.dropdown {
+  border: none;
+  background-color: transparent;
+  color: #262730;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.dropdown img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.panel-head {
+  display: grid;
+  grid-template-columns: 0.25fr 8fr 0.5fr 0.25fr 0.25fr;
+  gap: 5px;
+
+  border-top: 0.5px solid #ecf1f4;
+  border-bottom: 0.5px solid #ecf1f4;
+  padding: 12px;
+
+  align-items: center;
+}
+.panel-desc {
+  flex-grow: 1;
+  gap: 8px;
+}
+.region-vintage {
+  display: flex;
+  justify-content: start;
+  gap: 42px;
+  margin-top: 8px;
+}
+.region,
+.desc-vintage {
+  display: flex;
+}
+.panel {
+  display: none;
+  overflow: hidden;
+}
+.panel-head h1,
+.region h1,
+.desc-vintage h1,
+.panel-rating-div h1,
+.panel-stock-div h1 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #262730;
+}
+.panel-head a {
+  color: #ef4859;
+}
+.panel-head img {
+  justify-self: end;
+  align-self: center;
+}
+
+.panel-desc p,
+.panel-head p,
+.region p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8c8ca1;
+}
+
+.panel-stats {
+  display: grid;
+  grid-template-columns: 0.25fr 5fr 5fr;
+  justify-content: center;
+  padding: 12px;
+}
+.panel-rating {
+  flex-grow: 1;
+  margin-right: 42px;
+}
+.panel-stock {
+  flex-flow: 1;
+}
+.panel-rating-div,
+.panel-stock-div {
+  display: flex;
+  gap: 40px 120px;
+  flex-wrap: wrap;
+}
+.panel-rating h1,
+.panel-stock h1 {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.panel-rating p,
+.panel-stock p {
+  margin: 8px 0px;
+  padding: 8px 16px;
+  background-color: #f4f7ff;
+  color: #485572;
+  border-radius: 5px;
+  text-align: center;
+}
+.panel-stock {
+  margin-left: 42px;
+}
+.panel-stock p {
+  color: #811434;
+  background-color: #fff2ee;
+}
+.active {
+  display: block;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #485572;
+  border-radius: 4px;
+}
+.product {
+  border: 0.5px solid #ecf1f4;
+  border-radius: 5px;
+}
+.hr {
+  margin: 0px 100px;
+}
+/* On mouse-over, add a grey background color */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ef4859;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 3px;
+  top: 0px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
